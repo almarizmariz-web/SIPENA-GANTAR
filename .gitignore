@@ -1,0 +1,18 @@
+
+# Rahasia konfigurasi lokal
+/config/database.php
+.env
+
+# File unggahan dan data lokal
+/uploads/
+/upload/
+/storage/
+
+# Cadangan database
+*.sql
+*.sql.gz
+
+# File sistem dan editor
+.DS_Store
+Thumbs.db
+.vscode/
