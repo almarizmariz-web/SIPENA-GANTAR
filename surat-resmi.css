@@ -1,0 +1,175 @@
+/* =================================
+   HALAMAN SURAT RAPAT RESMI
+================================= */
+
+.halaman-surat {
+    background: #f3f6fb;
+    min-height: 100vh;
+    padding: 30px;
+    display: block;
+}
+
+.konten-surat {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.judul-surat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.judul-surat h1 {
+    color: #123d70;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.judul-surat p {
+    color: #667085;
+    font-size: 14px;
+}
+
+.tombol-kembali {
+    background: #145da0;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* FORM */
+
+.form-surat,
+.daftar-surat {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 40, 90, 0.06);
+    margin-bottom: 25px;
+}
+
+.form-surat h2,
+.daftar-surat h2 {
+    color: #123d70;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-surat label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #344054;
+    margin-bottom: 8px;
+}
+
+.form-surat input,
+.form-surat textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5deea;
+    border-radius: 7px;
+    margin-bottom: 17px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.form-surat input:focus,
+.form-surat textarea:focus {
+    outline: none;
+    border-color: #145da0;
+}
+
+.form-surat textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-surat button {
+    background: #145da0;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-surat button:hover {
+    background: #0d477d;
+}
+
+/* TABEL */
+
+.tabel-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabel-scroll table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.tabel-scroll th,
+.tabel-scroll td {
+    padding: 13px;
+    border-bottom: 1px solid #e5eaf0;
+    text-align: left;
+    font-size: 13px;
+}
+
+.tabel-scroll th {
+    background: #145da0;
+    color: white;
+}
+
+.tabel-scroll td {
+    color: #344054;
+}
+
+.tabel-scroll tr:hover td {
+    background: #f5f9ff;
+}
+
+.tabel-scroll a {
+    color: #145da0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tabel-scroll a:hover {
+    text-decoration: underline;
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 600px) {
+
+    .halaman-surat {
+        padding: 15px;
+    }
+
+    .judul-surat {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .judul-surat h1 {
+        font-size: 23px;
+    }
+
+    .form-surat,
+    .daftar-surat {
+        padding: 18px;
+    }
+
+}

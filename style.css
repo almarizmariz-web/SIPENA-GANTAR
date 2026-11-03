@@ -1,0 +1,665 @@
+/* RESET & GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #26344a;
+    line-height: 1.6;
+}
+
+/* NAVBAR & HOMEPAGE */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #12345a;
+    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border: 2px solid #d6ad60;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.logo-teks {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-teks strong {
+    color: white;
+    font-size: 20px;
+}
+
+.logo-teks span {
+    color: #d6ad60;
+    font-size: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.tombol {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #dfb45e;
+    color: #173252;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(120deg, #12345a, #245b85);
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.label {
+    color: #f0ca78;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #f0ca78;
+}
+
+.hero-content > p {
+    margin-bottom: 25px;
+}
+
+.fitur {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.fitur h2 {
+    margin-bottom: 30px;
+    color: #12345a;
+}
+
+.fitur-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.kartu {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.kartu h3 {
+    margin-bottom: 10px;
+    color: #173f6b;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #12345a;
+    color: white;
+}
+
+/* HALAMAN LOGIN (KODE BERSIH & RAPI) */
+.halaman-login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #12345a, #28618c);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Jika Anda menggunakan teks "SG" bulat */
+.login-logo-teks {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #d6ad60;
+    border-radius: 50%;
+    background: #12345a;
+    color: #f0ca78;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Jika Anda menggunakan file gambar (logo) asli */
+.login-logo-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.login-box h2 {
+    color: #12345a;
+    margin-bottom: 5px;
+}
+
+.login-box > p {
+    margin-bottom: 25px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.login-box form {
+    text-align: left;
+}
+
+.login-box label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #12345a;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e2;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.login-box input:focus {
+    outline: 2px solid #28618c;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 7px;
+    background: #12345a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-box button:hover {
+    background: #245b85;
+}
+
+.kembali {
+    display: inline-block;
+    margin-top: 20px;
+    color: #245b85;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.kembali:hover {
+    text-decoration: underline;
+}
+
+.pesan-login {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background: #fff0f0;
+    color: #a12626;
+    font-size: 14px;
+    border: 1px solid #fecaca;
+    text-align: left;
+}
+
+/* HALAMAN DASHBOARD */
+.halaman-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f3f6fb;
+}
+
+.sidebar {
+    width: 245px;
+    flex-shrink: 0;
+    padding: 25px 15px;
+    background: #12345a;
+    color: white;
+}
+
+.sidebar h2 {
+    margin-bottom: 35px;
+    padding-left: 10px;
+}
+
+.sidebar h2 span {
+    color: #e8bd69;
+}
+
+.sidebar-label {
+    margin: 20px 10px 10px;
+    color: #b5c6da;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar .menu-aktif {
+    background: #28557e;
+}
+
+.sidebar .menu-logout {
+    margin-top: 30px;
+    color: #ffd18a;
+}
+
+.konten-dashboard {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    color: #12345a;
+}
+
+.dashboard-header p {
+    color: #64748b;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profil span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.sambutan {
+    padding: 25px;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #12345a, #28618c);
+    color: white;
+}
+
+.sambutan h2 {
+    margin-bottom: 10px;
+}
+
+.sambutan p {
+    margin-top: 8px;
+}
+
+.statistik {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.statistik-card {
+    padding: 22px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.statistik-card p {
+    color: #64748b;
+}
+
+.statistik-card h2 {
+    margin-top: 10px;
+    color: #12345a;
+}
+
+.statistik-card .teks-seksi {
+    font-size: 18px;
+    overflow-wrap: anywhere;
+}
+
+.aksi-cepat h2 {
+    margin-bottom: 20px;
+    color: #12345a;
+}
+
+.aksi-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.aksi-card {
+    padding: 22px;
+    border-radius: 10px;
+    background: white;
+    color: #26344a;
+    text-decoration: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.aksi-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.aksi-card span {
+    font-size: 28px;
+}
+
+.aksi-card h3 {
+    margin: 10px 0;
+    color: #12345a;
+}
+
+.aksi-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 800px) {
+    .halaman-dashboard {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: auto;
+    }
+    .sidebar h2 {
+        margin-bottom: 15px;
+    }
+    .sidebar-label {
+        margin-top: 12px;
+    }
+    .konten-dashboard {
+        padding: 18px;
+    }
+    .statistik {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 5px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .fitur-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .dashboard-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .profil {
+        align-items: flex-start;
+    }
+    .aksi-container {
+        grid-template-columns: 1fr;
+    }
+    .login-box {
+        padding: 25px;
+    }
+}
+/* Ganti bagian navbar lawas Anda dengan kode ini */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Mendorong logo ke kiri, menu ke kanan */
+    align-items: center;
+    padding: 15px 8%;
+    background: #12345a;
+    color: white;
+}
+
+/* Mengatur container menu navigasi */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Memberikan jarak renggang antar teks menu */
+}
+
+/* Mengatur style link teks menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #e8bd69; /* Berubah warna emas saat diarahkan kursor */
+}
+
+/* Tambahan gaya tombol "Masuk" di navigasi jika ingin terlihat kontras */
+.tombol-masuk {
+    padding: 8px 16px;
+    background: #dfb45e;
+    color: #173252 !important;
+    border-radius: 5px;
+    font-weight: bold !important;
+}
+
+.tombol-masuk:hover {
+    background: #f0ca78;
+}
+
+.tombol-navigasi {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px auto;
+}
+
+.tombol {
+    width: auto;
+    margin: 0;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.tombol-back {
+    background: #64748b;
+}
+
+.tombol-cetak {
+    background: #17365d;
+}
+
+@media print {
+    .tombol-navigasi {
+        display: none;
+    }
+}
+
+/* RESPONSIVE FORM NOTULEN */
+
+/* Mencegah elemen melebar keluar layar */
+.form-notulen {
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
+}
+
+/* Input menyesuaikan lebar form */
+.form-notulen input,
+.form-notulen textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Tampilan tablet */
+@media (max-width: 768px) {
+    .form-notulen {
+        width: 100%;
+        margin: 15px auto;
+        padding: 20px;
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-notulen {
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .form-notulen h2 {
+        font-size: 21px;
+    }
+
+    .form-notulen input,
+    .form-notulen textarea {
+        font-size: 16px;
+    }
+
+    .form-notulen button {
+        width: 100%;
+        padding: 13px;
+    }
+}
+.tabel {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabel table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.tabel th,
+.tabel td {
+    padding: 10px;
+    font-size: 13px;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .tabel {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabel table {
+        min-width: 600px;
+    }
+
+    .tabel th,
+    .tabel td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .tabel button,
+    .tabel a {
+        font-size: 12px;
+    }}
+    /* Membuat area tanda tangan fleksibel */
+.kontainer-tanda-tangan {
+    display: flex;
+    justify-content: flex-end; /* Mengarahkan box ke sisi kanan */
+    margin-top: 40px;
+}
+
+/* Membatasi lebar teks agar rapi dan teks di dalamnya rata kiri */
+.box-tanda-tangan {
+    width: 250px; /* Membatasi lebar area tanda tangan */
+    text-align: left; /* Teks di dalam box tetap rata kiri agar rapi */
+}

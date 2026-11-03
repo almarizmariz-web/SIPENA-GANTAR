@@ -1,0 +1,154 @@
+
+/* DASAR HALAMAN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #263445;
+    padding: 30px;
+}
+
+/* JUDUL */
+.jadwal-header {
+    background: #123b69;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-left: 6px solid #d6ad45;
+}
+
+.jadwal-header h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.jadwal-header p {
+    color: #dce7f4;
+    font-size: 14px;
+}
+
+/* KONTEN */
+.konten-jadwal {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+.konten-jadwal h2 {
+    margin-bottom: 20px;
+    color: #123b69;
+}
+
+/* TOMBOL */
+.tombol {
+    display: inline-block;
+    background: #123b69;
+    color: white;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tombol:hover {
+    background: #0b294b;
+}
+
+.tombol-kembali {
+    display: inline-block;
+    margin-top: 20px;
+    color: #123b69;
+    text-decoration: none;
+}
+
+/* TABEL */
+.tabel-bungkus {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+th {
+    background: #123b69;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e5eaf0;
+    font-size: 14px;
+}
+
+tr:hover td {
+    background: #f5f8fc;
+}
+
+/* FORM */
+.form-jadwal {
+    max-width: 650px;
+}
+
+.form-jadwal label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #263445;
+}
+
+.form-jadwal input,
+.form-jadwal textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccd5e0;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.form-jadwal input:focus,
+.form-jadwal textarea:focus {
+    outline: none;
+    border-color: #123b69;
+    box-shadow: 0 0 0 3px rgba(18,59,105,0.1);
+}
+
+.form-jadwal textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .jadwal-header {
+        padding: 20px;
+    }
+
+    .jadwal-header h1 {
+        font-size: 21px;
+    }
+
+    .konten-jadwal {
+        padding: 16px;
+    }
+}

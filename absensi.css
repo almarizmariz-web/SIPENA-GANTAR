@@ -1,0 +1,255 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #263445;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+/* HEADER */
+.absensi-header {
+    background: #123b69;
+    color: white;
+    padding: 25px;
+    border-left: 6px solid #d6ad45;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.absensi-header h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.absensi-header p {
+    color: #dce7f4;
+    font-size: 14px;
+}
+
+/* RINGKASAN */
+.ringkasan-absensi {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.kartu-absensi {
+    flex: 1;
+    min-width: 150px;
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border-top: 4px solid #d6ad45;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.kartu-absensi h3 {
+    font-size: 14px;
+    color: #65758b;
+    margin-bottom: 10px;
+}
+
+.kartu-absensi p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #123b69;
+}
+
+/* KONTEN */
+.konten-absensi {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.konten-absensi h2 {
+    color: #123b69;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5eaf0;
+    margin: 30px 0;
+}
+
+/* FORM */
+.form-absensi {
+    max-width: 650px;
+}
+
+.form-absensi label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-absensi input,
+.form-absensi select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccd5e0;
+    border-radius: 7px;
+    background: white;
+    font-size: 14px;
+}
+
+.form-absensi input:focus,
+.form-absensi select:focus {
+    outline: none;
+    border-color: #123b69;
+    box-shadow: 0 0 0 3px rgba(18, 59, 105, 0.1);
+}
+
+/* TOMBOL */
+.tombol {
+    display: inline-block;
+    background: #123b69;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.tombol:hover {
+    background: #0b294b;
+}
+
+.tombol-edit {
+    background: #d6ad45;
+    color: #263445;
+}
+
+.tombol-edit:hover {
+    background: #bd9430;
+}
+
+.tombol-hapus {
+    background: #c0392b;
+}
+
+.tombol-hapus:hover {
+    background: #922b21;
+}
+
+.tombol-kembali {
+    display: inline-block;
+    margin-top: 22px;
+    color: #123b69;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tombol-kembali:hover {
+    text-decoration: underline;
+}
+
+/* TABEL */
+.tabel-bungkus {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+}
+
+th {
+    background: #123b69;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 13px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e5eaf0;
+    font-size: 13px;
+}
+
+tbody tr:hover td {
+    background: #f5f8fc;
+}
+
+/* STATUS */
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #e8f0fa;
+    color: #123b69;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* AKSI EDIT DAN HAPUS */
+.aksi {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.aksi form {
+    margin: 0;
+}
+
+.aksi .tombol {
+    white-space: nowrap;
+}
+
+.data-kosong {
+    text-align: center;
+    padding: 25px;
+    color: #65758b;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .absensi-header {
+        padding: 20px;
+    }
+
+    .absensi-header h1 {
+        font-size: 22px;
+    }
+
+    .konten-absensi {
+        padding: 16px;
+    }
+
+    .ringkasan-absensi {
+        gap: 10px;
+    }
+
+    .kartu-absensi {
+        min-width: 120px;
+        padding: 16px;
+    }
+
+    .kartu-absensi p {
+        font-size: 24px;
+    }
+}
